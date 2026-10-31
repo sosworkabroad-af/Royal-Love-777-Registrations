@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#5b1f63">
   <title>Royal Love 777 Registration</title>
   <meta name="description"
-    content="Register Royal Love families, the 144 pilgrimage churches for March and November, and participants for 3 January.">
+    content="Register Royal Love families, the 144 pilgrimage churches, the 288 Covenant Churches and participants for 3 January.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
@@ -35,50 +35,7 @@
       --display: "Cormorant Garamond", "Garamond", Georgia, serif;
       --body: "Mulish", "Segoe UI", system-ui, sans-serif;
       --radius: 8px;
-    }
-
-    @media (prefers-color-scheme:dark) {
-      :root:not([data-theme="light"]) {
-        --bg: #140b17;
-        --surface: #1d1121;
-        --band: #180e1c;
-        --field: #170d1a;
-        --ink: #f5ecf6;
-        --muted: #b8a6bc;
-        --line: #3a2740;
-        --accent: #d7b25a;
-        --accent-ink: #1d1103;
-        --accent-2: #e2bf68;
-        --ring: rgba(215, 178, 90, .2);
-        --link: #e6c472;
-        --bad: #ff8f8f;
-        --ok: #8fd69c;
-        --ok-bg: #163020;
-        --shadow: rgba(0, 0, 0, .7);
-        --gold: #e2bf68;
-        color-scheme: dark
-      }
-    }
-
-    :root[data-theme="dark"] {
-      --bg: #140b17;
-      --surface: #1d1121;
-      --band: #180e1c;
-      --field: #170d1a;
-      --ink: #f5ecf6;
-      --muted: #b8a6bc;
-      --line: #3a2740;
-      --accent: #d7b25a;
-      --accent-ink: #1d1103;
-      --accent-2: #e2bf68;
-      --ring: rgba(215, 178, 90, .2);
-      --link: #e6c472;
-      --bad: #ff8f8f;
-      --ok: #8fd69c;
-      --ok-bg: #163020;
-      --shadow: rgba(0, 0, 0, .7);
-      --gold: #e2bf68;
-      color-scheme: dark
+      color-scheme: light;
     }
 
     [hidden] {
@@ -1125,6 +1082,44 @@
       }
     }
 
+    .date .to {
+      display: block;
+      margin-top: 2px;
+      font-size: .66rem;
+      letter-spacing: .06em;
+      color: var(--muted)
+    }
+
+    .bigs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      margin-top: 4px
+    }
+
+    .bigs .big {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 4px
+    }
+
+    .bigs .big b {
+      font-size: 2.6rem
+    }
+
+    .date-word {
+      align-self: center
+    }
+
+    .date-word span {
+      font-size: .78rem
+    }
+
     .dims {
       display: flex;
       flex-wrap: wrap;
@@ -1179,12 +1174,12 @@
           <p class="verse">Love one another as I have loved you.<small>John 13:34 · the Kainos commandment</small></p>
           <p class="lead">Royal Love 777 is a 7-day, 7-times-a-day devotional with a foot-washing ceremony, built on the
             7 Dimensions of Love. Register your family to walk the journey, register your church as one of the 144
-            pilgrimage churches, or register to take part on 3 January.</p>
+            pilgrimage churches or the 288 Covenant Churches, or register to take part on 3 January.</p>
           <ul class="benefits">
             <li><strong>Royal Love families</strong><span>The devotional, the Love Audit and the Ambassador's Training
                 Program for your household.</span></li>
-            <li><strong>144 pilgrimage churches</strong><span>Bring a delegation from your church to the March or
-                November pilgrimage.</span></li>
+            <li><strong>144 pilgrimage churches</strong><span>Bring a delegation from your church to the VIP Pilgrimage,
+                25 February to 8 March 2027, or the November pilgrimage.</span></li>
             <li><strong>3 January</strong><span>Register yourself or your group to take part in the January
                 gathering.</span></li>
             <li><strong>Books in bulk</strong><span>Order Royal Love 777 for your family, congregation or
@@ -1204,17 +1199,21 @@
               <div><strong>January gathering</strong><em>Open to individuals, families and groups</em></div>
             </li>
             <li>
-              <div class="date"><b>III</b><span>March</span></div>
-              <div><strong>Spring pilgrimage</strong><em>For registered pilgrimage churches and their delegations</em>
-              </div>
+              <div class="date"><b>25</b><span>Feb</span><span class="to">to 8 Mar 2027</span></div>
+              <div><strong>VIP Pilgrimage · Royal Priesthood</strong><em>Establishment of the Royal Love Pilgrimage and
+                  Global Inauguration of 288 Covenant Churches for day and night worship. One UN Plaza, New York. Amos
+                  9:11–12</em></div>
             </li>
             <li>
-              <div class="date"><b>XI</b><span>November</span></div>
-              <div><strong>Autumn pilgrimage</strong><em>For registered pilgrimage churches and their delegations</em>
+              <div class="date date-word"><span>November</span></div>
+              <div><strong>November pilgrimage</strong><em>For registered pilgrimage churches and their delegations</em>
               </div>
             </li>
           </ol>
-          <div class="big"><b>144</b><span>churches will be received for the pilgrimages</span></div>
+          <div class="bigs">
+            <div class="big"><b>144</b><span>pilgrimage churches</span></div>
+            <div class="big"><b>288</b><span>Covenant Churches for day and night worship</span></div>
+          </div>
         </aside>
       </div>
     </section>
@@ -1295,8 +1294,9 @@
             <div><button type="button" id="restart" class="btn link">Start a new registration</button></div>
           </div>
         </div>
-        <p class="fine">Registration is free. Church places for the pilgrimages are limited to 144 and are confirmed in
-          the order registrations are reviewed. Book orders are confirmed with an invoice before payment.</p>
+        <p class="fine">Registration is free. Places for the 144 pilgrimage churches and the 288 Covenant Churches are
+          confirmed in the order registrations are reviewed. Book orders are confirmed with an invoice before payment.
+        </p>
       </div>
     </section>
 
@@ -1313,9 +1313,10 @@
             </ol>
           </div>
           <div>
-            <h3>Pilgrimage churches</h3>
+            <h3>Churches</h3>
             <ol>
-              <li>We review your church and confirm one of the 144 places.</li>
+              <li>We review your church and confirm your place among the 144 pilgrimage churches or the 288 Covenant
+                Churches.</li>
               <li>We agree your delegation size and the pilgrimage you will attend.</li>
               <li>Your coordinator receives the programme, travel guidance and book orders for the delegation.</li>
             </ol>
@@ -1370,7 +1371,7 @@
             },
             {
               title: "Your participation", short: "Join", desc: "Choose everything your family would like to join.", fields: [
-                { id: "join", label: "Our family would like to", type: "checks", opts: ["Walk the 7-day devotional", "Take the Love Audit", "Join the Ambassador's Training Program", "Attend on 3 January", "Join the March pilgrimage", "Join the November pilgrimage"] },
+                { id: "join", label: "Our family would like to", type: "checks", opts: ["Walk the 7-day devotional", "Take the Love Audit", "Join the Ambassador's Training Program", "Attend on 3 January", "Join the VIP Pilgrimage (25 Feb – 8 Mar 2027)", "Join the November pilgrimage"] },
                 { id: "books", label: "Copies of Royal Love 777", type: "number", min: 0, req: false },
                 { id: "notes", label: "Prayer requests or anything we should know", type: "textarea", wide: true, req: false }
               ]
@@ -1378,7 +1379,7 @@
           ]
         },
         {
-          key: "church", label: "Pilgrimage church", sub: "One of the 144 churches coming for the March or November pilgrimage",
+          key: "church", label: "Church", sub: "One of the 144 pilgrimage churches or the 288 Covenant Churches",
           steps: [
             {
               title: "Church details", short: "Church", desc: "As your church is officially known.", fields: [
@@ -1391,8 +1392,9 @@
               ]
             },
             {
-              title: "Pilgrimage", short: "Pilgrimage", desc: "Which pilgrimage your church will attend.", fields: [
-                { id: "pilgrimage", label: "Pilgrimage", type: "radio", opts: ["March", "November", "Both March and November"] },
+              title: "Your church's place", short: "Place", desc: "Choose what your church is registering for. You can choose both.", fields: [
+                { id: "church_role", label: "Our church is registering as", type: "checks", opts: ["One of the 144 pilgrimage churches", "One of the 288 Covenant Churches for day and night worship"] },
+                { id: "pilgrimage", label: "Pilgrimage", type: "radio", opts: ["VIP Pilgrimage, 25 Feb – 8 Mar 2027", "November pilgrimage", "Both"], showIf: ["church_role", "One of the 144 pilgrimage churches"] },
                 { id: "delegation", label: "Delegation size", type: "number", min: 1, hint: "Number of people travelling from your church." },
                 { id: "jan3", label: "Will your church also take part on 3 January?", type: "radio", opts: ["Yes", "No", "Not sure yet"] },
                 { id: "support", label: "Your delegation will need", type: "checks", req: false, opts: ["Accommodation guidance", "Airport pickup", "Invitation letter for visas", "Books for the delegation"] },
