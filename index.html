@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#5b1f63">
   <title>Royal Love 777 Registration</title>
   <meta name="description"
-    content="Register Royal Love families, the 144 pilgrimage churches, the 288 Covenant Churches and participants for 3 January.">
+    content="Register Royal Love families, the 144 pilgrimage churches, the 288 Covenant Churches and participants for 3rd January.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
@@ -1120,6 +1120,12 @@
       font-size: .78rem
     }
 
+    .date b sup {
+      font-size: .45em;
+      vertical-align: super;
+      margin-left: 1px
+    }
+
     .dims {
       display: flex;
       flex-wrap: wrap;
@@ -1174,13 +1180,13 @@
           <p class="verse">Love one another as I have loved you.<small>John 13:34 · the Kainos commandment</small></p>
           <p class="lead">Royal Love 777 is a 7-day, 7-times-a-day devotional with a foot-washing ceremony, built on the
             7 Dimensions of Love. Register your family to walk the journey, register your church as one of the 144
-            pilgrimage churches or the 288 Covenant Churches, or register to take part on 3 January.</p>
+            pilgrimage churches or the 288 Covenant Churches, or register to take part on 3rd January.</p>
           <ul class="benefits">
             <li><strong>Royal Love families</strong><span>The devotional, the Love Audit and the Ambassador's Training
                 Program for your household.</span></li>
             <li><strong>144 pilgrimage churches</strong><span>Bring a delegation from your church to the VIP Pilgrimage,
                 25 February to 8 March 2027, or the November pilgrimage.</span></li>
-            <li><strong>3 January</strong><span>Register yourself or your group to take part in the January
+            <li><strong>3rd January</strong><span>Register yourself or your group to take part in the January
                 gathering.</span></li>
             <li><strong>Books in bulk</strong><span>Order Royal Love 777 for your family, congregation or
                 delegation.</span></li>
@@ -1195,7 +1201,7 @@
           <p>Choose the gathering you are registering for in the form below.</p>
           <ol class="dates">
             <li>
-              <div class="date"><b>3</b><span>January</span></div>
+              <div class="date"><b>3<sup>rd</sup></b><span>January</span></div>
               <div><strong>January gathering</strong><em>Open to individuals, families and groups</em></div>
             </li>
             <li>
@@ -1322,7 +1328,7 @@
             </ol>
           </div>
           <div>
-            <h3>3 January participants</h3>
+            <h3>3rd January participants</h3>
             <ol>
               <li>We confirm your registration and the number of people with you.</li>
               <li>You receive the programme and arrival details before the day.</li>
@@ -1371,7 +1377,7 @@
             },
             {
               title: "Your participation", short: "Join", desc: "Choose everything your family would like to join.", fields: [
-                { id: "join", label: "Our family would like to", type: "checks", opts: ["Walk the 7-day devotional", "Take the Love Audit", "Join the Ambassador's Training Program", "Attend on 3 January", "Join the VIP Pilgrimage (25 Feb – 8 Mar 2027)", "Join the November pilgrimage"] },
+                { id: "join", label: "Our family would like to", type: "checks", opts: ["Walk the 7-day devotional", "Take the Love Audit", "Join the Ambassador's Training Program", "Attend on 3rd January", "Join the VIP Pilgrimage (25 Feb – 8 Mar 2027)", "Join the November pilgrimage"] },
                 { id: "books", label: "Copies of Royal Love 777", type: "number", min: 0, req: false },
                 { id: "notes", label: "Prayer requests or anything we should know", type: "textarea", wide: true, req: false }
               ]
@@ -1396,7 +1402,7 @@
                 { id: "church_role", label: "Our church is registering as", type: "checks", opts: ["One of the 144 pilgrimage churches", "One of the 288 Covenant Churches for day and night worship"] },
                 { id: "pilgrimage", label: "Pilgrimage", type: "radio", opts: ["VIP Pilgrimage, 25 Feb – 8 Mar 2027", "November pilgrimage", "Both"], showIf: ["church_role", "One of the 144 pilgrimage churches"] },
                 { id: "delegation", label: "Delegation size", type: "number", min: 1, hint: "Number of people travelling from your church." },
-                { id: "jan3", label: "Will your church also take part on 3 January?", type: "radio", opts: ["Yes", "No", "Not sure yet"] },
+                { id: "jan3", label: "Will your church also take part on 3rd January?", type: "radio", opts: ["Yes", "No", "Not sure yet"] },
                 { id: "support", label: "Your delegation will need", type: "checks", req: false, opts: ["Accommodation guidance", "Airport pickup", "Invitation letter for visas", "Books for the delegation"] },
                 { id: "books", label: "Copies of Royal Love 777", type: "number", min: 1, showIf: ["support", "Books for the delegation"] },
                 { id: "notes", label: "Anything else we should know", type: "textarea", wide: true, req: false }
@@ -1413,7 +1419,7 @@
           ]
         },
         {
-          key: "jan3", label: "3 January participant", sub: "Individuals and groups taking part on 3 January",
+          key: "jan3", label: "3rd January participant", sub: "Individuals and groups taking part on 3rd January",
           steps: [
             {
               title: "About you", short: "You", desc: "The person registering.", fields: [
